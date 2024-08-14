@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <!--Busque su emoji en https://www.w3schools.com/html/html_emojis.asp-->
+        <title>&#128128 ¡Segunda clase!</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <p><a href="index.html" class="activo">bienvenide</a>
+            <a href="page.html">dibuje</a>
+            </p>
+            <h1></h1>
+            <h2></h2>
+            <p>Tome este ramo para aprender a desarrollar una pagina web que me permita realizar mi proyecto de titulo, espero poder lograr lo que necesito y bueno adquirir los conocimientos necesarios para realizarlo. <code>mouseDragged()</code></p>            
+        </header>
+        <main>
+        </main>
+        <aside>
+            <button onclick= "foto()">🖨️</button>
+            <button onclick= "borra()">borra</button>
+        </aside>
+        <script>
+            var saludo = { 
+                arriba: ["¡Hola tonoto!","¡Hola Gaspi!", "¡Hola loco pepe!", "¡Hola guapito!"],
+                          abajo:[ "Mi nombre es Gaspar Thomas López", "Soy conocido como el Loco pepe"] };
+            var titular;
+            var nombre;
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                //selecciona un par de colores en https://materialui.co/colors
+                background('#C378CE');
+                stroke(random());
+                titular = select('h1');
+                titular.html(random(saludo.arriba));
+                nombre = select('h2');
+                nombre.html("para que tanto atado");
+                
+            }
+            function draw () {
+               background('#C378CE');
+                textSize (46);
+                text ( "💀", mouseX, mouseY);
+                
+            }
+         
+        </script>
+    </body>
+</html>

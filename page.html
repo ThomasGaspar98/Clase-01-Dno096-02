@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <main>
+        <h1>Hola mundo!</h1>
+        <p> invente: </p>
+    </main>
+      <aside>
+            <button onclick= "foto()">🖨️</button>
+            <button onclick= "borra()">borra</button>
+        </aside>
+    <script>
+    var a= "Hola mundo!";
+    function setup() {
+      createCanvas(windowWidth,windowHeight);
+      background(255,34,145);
+        stroke (100)
+    }
+
+    function draw() {
+      line (pmouseX,pmouseY,mouseX,mouseY)
+       }
+    function foto(){
+        saveCanvas ('mi-dibujo.jpg');
+    }
+    function borra(){
+        background ('#C378CE');
+    }
+    </script>
+  </body>
+</html>
